@@ -80,7 +80,7 @@ table {
 .main-container{
     /* min-width: 390px;   */
     /* background-color: white; */
-    padding: 1rem;
+    /* padding-top: 1rem; */
 }
 
 /* Header */
@@ -89,6 +89,7 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem;
 }
 /* Navbar */
 .logo img{
@@ -110,6 +111,7 @@ nav a{
     margin-top: 100px;
     padding: ;
     text-align: center ;
+    padding: 2rem;
 }
 .info img{
     max-width: 100%;
@@ -184,6 +186,7 @@ picture img{
 .review{
     background-color:rgb(245, 242, 248) ;
     height: 1100px;
+    padding: 1.5rem;
 
 }
 
@@ -362,19 +365,31 @@ footer{
 }
 
 footer ul li a{
-    color: var(--font-color);
+    color: var(--font-color2);
     text-decoration: none;
+    font-size: 15px;
+    font-family: var(--font-heading);
+    font-weight: bolder;
 }
 .footer-links li{
     margin-bottom: 1rem;
 }
 
 .footer-links{
-    margin: 2rem 0;
+    margin: 3rem 0;
+    
 }
+.footer-links
 .footer-grid{
     margin: 2rem 0;
 
+}
+.footer-grid span{
+    font-size: 15px;
+    font-family: var(--font-heading);
+    color: var(--font-color2);
+    font-weight: bolder;
+    padding: 1rem;
 }
 .footer-socials{
     display: flex;
@@ -385,4 +400,11 @@ footer ul li a{
 
 .footer-grid .icon-phone{
     margin-bottom: 1rem;
+}
+.footer-grid{
+    margin-top: 3rem;
+}
+
+.footer-links li:nth-child(4) {
+    margin-bottom: 3rem;
 }
