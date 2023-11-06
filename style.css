@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET END */
+
+/* Global roots */
+:root{
+
+    --primairy-color: hsl(243, 87%, 12%);
+    --primary-color2:hsl(238, 22%, 44%);
+    /* Accent color */
+    --secondary-color: hsl(224, 93%, 58%);
+    --secondary-color2:hsl(170, 45%, 43%);
+    /* font-color */
+    --font-color: hsl(240, 75%, 98%);
+    --font-color2: hsl(0, 0%, 75%);
+    /* Font-size */
+    --font-size: 16px;
+    /* Headings, Call-to-actions, Header Navigation */
+    --font-heading:'Raleway';
+    /* Font body */
+    --font-body:'Open Sans';
+    /* margin-bottom: */
+    --margin: 50px;
+
+     /* - Mobile: 375px
+     - Desktop: 1440px */
+}
+/* Body General  */
+.main-container{
+    /* min-width: 390px;   */
+    /* background-color: white; */
+    padding: 1rem;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navbar */
+.logo img{
+    width: 80px;
+}
+li{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--font-color2);
+    font-family: var(--font-body);
+    font-size: 14px;
+}
+/* Info section */
+.info{
+    margin-top: 100px;
+    padding: ;
+    text-align: center ;
+}
+.info img{
+    max-width: 100%;
+}
+/* Info section typography */
+.info h2{
+    max-width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-body);
+    line-height: 1.5;
+    font-size: 23px;
+    margin-bottom: var(--margin);
+}
+.info p{
+    margin: auto;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: var(--font-body);
+    font-size: 15px;
+    text-align-last: center;
+    color: black;
+}
+/* Info section email container */
+.info-email-container{
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    row-gap: 15px;
+}
+.info-email-container button,.info-email-container input{
+    height: 40px;
+    width:100%;
+    border-radius: 4px;
+    margin: auto;
+}
+.info-email-container input{
+    padding: 1.5em;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.info-email-container input:focus{
+    outline-color: var(--secondary-color);    
+}
+.info-email-container button{
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    font-size: 15px;
+    font-family: var(--font-heading);
+    border-style: none;
+    font-weight: bold;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 100%;
+}
+.info-email-container button:hover{
+    filter: brightness(120%);
+}
+
+picture img{
+    margin-top: 100px;
+    margin-bottom: -10px;
+    width: 100%;
+}
+
+/* Review section */
+.review{
+    background-color:rgb(245, 242, 248) ;
+    height: 1100px;
+
+}
+
+
+.review-img{
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.review h2{
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-body);
+    line-height: 1.5;
+    font-size: 23px;
+    margin-bottom: var(--margin);
+
+}
+.review p{
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: 15px;
+    text-align-last: left;
+    color: var(--secondary-color2);
+}
+.test-box p{
+    color: black;
+}
+.link-para-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.link-para-box img{
+    width: 20px;
+    cursor: pointer;
+}
+.review a{
+    color: var(--secondary-color2);
+    font-family: var(--font-body);
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;;
+}
+
+.link-para-box a::after{
+    content: '';
+    background-color: var(--secondary-color2);
+    width: 100%;
+    border: 1px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    pointer-events: none;
+}
+
+.test-box{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    border: none;
+    padding: 20px;
+    max-width: 80%;
+    height: 250px;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.475);
+
+}
+.test-box p{
+    margin-top: 10px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: 15px;
+    text-align-last: left;
+}
+.profile{
+    width: 40px;
+    border-radius: 100%;
+
+}
+figure{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+figure ul li:first-child{
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: var(--font-heading);
+}
+figure ul li:last-child{
+    font-size: 10px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+.contact-us{
+    padding: 3rem;
+   height: 350px;
+   text-align: center;
+   background-color: var(--primary-color2);
+}
+.early-access{
+    margin-bottom: 20px;
+}
+.early-access h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-body);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.early-access p{
+    margin-top: 10px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: white;
+}
+
+
+.contact-us-submit input{
+    margin-bottom: .5rem;
+    padding: 0.5rem;
+    width: 100%;
+    border-color: black;
+    border-radius: 4px;
+    
+}
+.contact-us-submit button{
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    font-size: 15px;
+    font-family: var(--font-heading);
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.contact-us-submit input:focus{
+    outline-color: var(--secondary-color);
+}
+.contact-us-submit button:hover{
+    filter: brightness(120%);
+    color: white;
+}
+footer{
+    background-color: var(--primairy-color);
+    padding: 2rem;
+    color: white;
+}
+.footer-container{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.footer-img{
+    /* padding: 3rem; */
+}
+
+footer ul li a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.footer-links li{
+    margin-bottom: 1rem;
+}
+
+.footer-links{
+    margin: 2rem 0;
+}
+.footer-grid{
+    margin: 2rem 0;
+
+}
+.footer-socials{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-grid .icon-phone{
+    margin-bottom: 1rem;
+}
